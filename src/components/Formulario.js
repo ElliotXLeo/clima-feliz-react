@@ -1,6 +1,7 @@
 import { useState } from "react";
+import Error from "./Error";
 
-const Formulario = ({busqueda, setBusqueda}) => {
+const Formulario = ({ busqueda, setBusqueda, setConsultar }) => {
 
   const [error, setError] = useState(false);
 
@@ -20,6 +21,7 @@ const Formulario = ({busqueda, setBusqueda}) => {
       return;
     }
     setError(false);
+    setConsultar(true);
   };
 
   return (
@@ -28,9 +30,9 @@ const Formulario = ({busqueda, setBusqueda}) => {
     >
       {
         error ?
-          <p className="red darken-4 error">
-            Todos los campos son obligatorios.
-          </p>
+          <Error
+            mensaje='Todos los campos son obligatorios.'
+          />
           :
           null
       }

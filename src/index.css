@@ -74,12 +74,20 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
   font-size: 1.4rem;
 }
 
-.temperatura {
-  font-size: 4rem!important
+.card-panel__nombre {
+  font-size: 2.5rem!important;
+  margin: 0;
+  padding: 0;
 }
 
-.temperatura span {
+.card-panel__temperatura {
   font-size: 2rem!important;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.card-panel__temperatura span {
+  font-size: 1rem!important;
   vertical-align: super;
 }
 
@@ -91,4 +99,8 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
   padding: 1rem!important;
   text-align: center!important;
   color: #FFF!important;
+}
+
+.text-center{
+  text-align: center;
 }
