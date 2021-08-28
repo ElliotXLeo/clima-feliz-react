@@ -67,11 +67,10 @@ const Formulario = ({ busqueda, setBusqueda, setConsultar }) => {
       </div>
 
       <div className="input-field col s12">
-        <input
+        <button
           type="submit"
-          value="Buscar Clima"
-          className="waves-effect waves-light btn-large btn-block yellow accent-4"
-        />
+          className="waves-effect waves-light btn-large btn-block yellow accent-4 w-100"
+        >Buscar Clima</button>
       </div>
     </form>
   );

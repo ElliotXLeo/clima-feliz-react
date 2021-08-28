@@ -110,3 +110,7 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
   text-align: center;
   position: relative;
 }
+
+.w-100{
+  width: 100%;
+}
