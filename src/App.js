@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import Clima from "./components/Clima";
 import Error from "./components/Error";
+import Footer from "./components/Footer";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
 
@@ -11,6 +12,9 @@ function App() {
     slogan: 'Ten a la naturaleza de tu lado.',
     comercialActivity: 'Pronóstico del clima'
   }
+
+  const currentDate = new Date().getFullYear();
+  const author = 'Elliot Garamendi';
 
   const [busqueda, setBusqueda] = useState({
     ciudad: '',
@@ -78,6 +82,11 @@ function App() {
           </div>
         </div>
       </section>
+
+      <Footer
+        currentDate={currentDate}
+        author={author}
+      />
     </Fragment>
   );
 }

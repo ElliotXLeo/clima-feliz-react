@@ -101,6 +101,12 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
   color: #FFF!important;
 }
 
-.text-center{
+.text-center {
   text-align: center;
+}
+
+.footer__contenido {
+  display: block;
+  text-align: center;
+  position: relative;
 }
