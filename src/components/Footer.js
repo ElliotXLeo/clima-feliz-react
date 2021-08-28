@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Footer = ({ currentDate, author }) => {
   return (
@@ -8,6 +9,11 @@ const Footer = ({ currentDate, author }) => {
       </nav>
     </footer>
   );
+}
+
+Footer.propTypes = {
+  currentDate: PropTypes.number.isRequired,
+  author: PropTypes.string.isRequired
 }
 
 export default Footer;
