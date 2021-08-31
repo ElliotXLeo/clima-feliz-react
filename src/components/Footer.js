@@ -5,7 +5,7 @@ const Footer = ({ currentDate, author }) => {
   return (
     <footer>
       <nav className="nav-wrapper light-blue darken-2">
-        <a href="#!" className="footer__contenido">🦄Copyright &copy; {currentDate} {author}. Todos los derechos reservados.🦄</a>
+        <div className="footer__contenido">🦄Copyright &copy; {currentDate} {author}. Todos los derechos reservados.🦄</div>
       </nav>
     </footer>
   );

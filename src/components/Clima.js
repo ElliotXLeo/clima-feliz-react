@@ -14,8 +14,8 @@ const Clima = ({ resultado }) => {
   return (
     <section className="card-panel white cols12">
       <div className="black-text text-center">
-        <p className="card-panel__nombre">{name}</p>
-        <p className="card-panel__temperatura">Temperatura: {parseFloat(main.temp - temperaturaReferencia).toFixed(2)} <span>&#x2103;</span></p>
+        <h2 className="card-panel__nombre">{name}</h2>
+        <h3 className="card-panel__temperatura">Temperatura: {parseFloat(main.temp - temperaturaReferencia).toFixed(2)} <span>&#x2103;</span></h3>
         <div>Temperatura máxima: {parseFloat(main.temp_max - temperaturaReferencia).toFixed(2)} <span>&#x2103;</span></div>
         <div>Temperatura mínima: {parseFloat(main.temp_min - temperaturaReferencia).toFixed(2)} <span>&#x2103;</span></div>
         <div>Presión: {main.pressure} mb</div>
