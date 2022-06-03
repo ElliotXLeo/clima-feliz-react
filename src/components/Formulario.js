@@ -38,18 +38,6 @@ const Formulario = ({ busqueda, setBusqueda, setConsultar }) => {
           null
       }
       <div className="input-field col s12">
-        <input
-          type="text"
-          name="ciudad"
-          id="ciudad"
-          value={ciudad}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="ciudad">Ciudad: </label>
-      </div>
-
-      <div className="input-field col s12">
         <select
           name="pais"
           id="pais"
@@ -66,7 +54,19 @@ const Formulario = ({ busqueda, setBusqueda, setConsultar }) => {
           <option value="ES">España</option>
           <option value="US">Estados Unidos</option>
         </select>
-        <label htmlFor="pais">Ciudad: </label>
+        <label htmlFor="pais">País: </label>
+      </div>
+
+      <div className="input-field col s12">
+        <input
+          type="text"
+          name="ciudad"
+          id="ciudad"
+          value={ciudad}
+          onChange={handleChange}
+          required
+        />
+        <label htmlFor="ciudad">Ciudad: </label>
       </div>
 
       <div className="input-field col s12">

@@ -5,7 +5,14 @@ html {
 .body {
   margin: 0;
   padding: 0;
+  background-color: #03a9f4;
   font-family: sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 nav .brand-logo {
@@ -44,8 +51,6 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
 
 .contenedor-form {
   padding: 3rem 0 1px 0;
-  background-color: #03a9f4;
-  min-height: 100vh;
 }
 
 .mensaje {
@@ -95,6 +100,10 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label {
 
 .text-center {
   text-align: center;
+}
+
+.footer {
+  margin-top: auto;
 }
 
 .footer__contenido {

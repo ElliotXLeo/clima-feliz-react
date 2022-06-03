@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Footer = ({ currentDate, author }) => {
   return (
-    <footer>
+    <footer className="footer">
       <nav className="nav-wrapper light-blue darken-2">
         <div className="footer__contenido">🦄Copyright &copy; {currentDate} {author}. Todos los derechos reservados.🦄</div>
       </nav>
